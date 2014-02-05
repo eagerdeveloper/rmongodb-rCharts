@@ -1,0 +1,484 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css'>
+    
+    <script src='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js' type='text/javascript'></script>
+    <script src='https://rawgithub.com/leaflet-extras/leaflet-providers/gh-pages/leaflet-providers.js' type='text/javascript'></script>
+    <script src='http://harrywood.co.uk/maps/examples/leaflet/leaflet-plugins/layer/vector/KML.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 1200px;
+      height: 600px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart9dd459275eb' class='rChart leaflet'></div>  
+    
+    <script>
+  var spec = {
+ "dom": "chart9dd459275eb",
+"width":           1200,
+"height":            600,
+"urlTemplate": "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+"layerOpts": {
+ "attribution": "Map data<a href=\"http://openstreetmap.org\">OpenStreetMap</a>\n         contributors, Imagery<a href=\"http://mapbox.com\">MapBox</a>" 
+},
+"provider": "Stamen.TonerLite",
+"center": [       40.73029,      -73.99076 ],
+"zoom":             10,
+"id": "chart9dd459275eb" 
+}
+
+  var map = L.map(spec.dom, spec.mapOpts)
+  
+    map.setView(spec.center, spec.zoom);
+
+    if (spec.provider){
+      L.tileLayer.provider(spec.provider).addTo(map)    
+    } else {
+		  L.tileLayer(spec.urlTemplate, spec.layerOpts).addTo(map)
+    }
+     
+    L
+  .marker([
+ 40.851,
+-73.87 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Bronx Park</b><br />Tennis Courts: 1<br/>(718) 430-1821</p>")
+L
+  .marker([
+ 40.839,
+-73.895 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Crotona Park</b><br />Tennis Courts: 1<br/>(718) 294-2516</p>")
+L
+  .marker([
+ 40.874,
+-73.84 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Haffen Park</b><br />Tennis Courts: 1<br/>(718) 379-8347</p>")
+L
+  .marker([
+ 40.885,
+-73.916 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Seton Park</b><br />Tennis Courts: 1<br/>(718) 601-6044</p>")
+L
+  .marker([
+ 40.866,
+-73.897 
+])
+  .addTo( map )
+  .bindPopup("<p><b>St. James Park</b><br />Tennis Courts: 1<br/>(718) 822-4271</p>")
+L
+  .marker([
+ 40.878,
+-73.878 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Williamsbridge Oval</b><br />Tennis Courts: 1<br/>(718) 654-1851</p>")
+L
+  .marker([
+ 40.681,
+-73.936 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Decatur Playground</b><br />Tennis Courts: 1<br/>(718) 493-7612</p>")
+L
+  .marker([
+ 40.606,
+-74.017 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Lucille Ferrera Tennis Courts (Dyker Beach Park)</b><br />Tennis Courts: 1<br/>(718) 259-4016</p>")
+L
+  .marker([
+ 40.691,
+-73.976 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Ft. Greene Park</b><br />Tennis Courts: 1<br/>(718) 722-3218</p>")
+L
+  .marker([
+ 40.618,
+-73.972 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Friends Field</b><br />Tennis Courts: 1<br/>(718) 965-6502</p>")
+L
+  .marker([
+  40.68,
+-73.928 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Jackie Robinson</b><br />Tennis Courts: 1<br/>(718) 493-7612</p>")
+L
+  .marker([
+ 40.611,
+-74.032 
+])
+  .addTo( map )
+  .bindPopup("<p><b>J.J. Carty</b><br />Tennis Courts: 1<br/>(718) 439-4296</p>")
+L
+  .marker([
+  40.62,
+-73.899 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Joseph T. McGuire Park</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+ 40.578,
+-73.995 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Kaiser Playground</b><br />Tennis Courts: 1<br/>(718) 946-1350</p>")
+L
+  .marker([
+ 40.632,
+-74.014 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Leif Ericson Park</b><br />Tennis Courts: 1<br/>(718) 259-4016</p>")
+L
+  .marker([
+ 40.666,
+-73.925 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Lincoln Terrace Park</b><br />Tennis Courts: 1<br/>(718) 804-7077</p>")
+L
+  .marker([
+ 40.658,
+-73.887 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Linden Playground</b><br />Tennis Courts: 1<br/>(718) 927-2059</p>")
+L
+  .marker([
+ 40.578,
+-73.94 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Manhattan Beach</b><br />Tennis Courts: 1<br/>(718) 946-1373</p>")
+L
+  .marker([
+ 40.608,
+-73.935 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Marine Park</b><br />Tennis Courts: 1<br/>(718) 376-1675</p>")
+L
+  .marker([
+ 40.722,
+-73.955 
+])
+  .addTo( map )
+  .bindPopup("<p><b>McCarren Park</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+   40.6,
+-73.972 
+])
+  .addTo( map )
+  .bindPopup("<p><b>McDonald Avenue Playground</b><br />Tennis Courts: 1<br/>(718) 946-1373</p>")
+L
+  .marker([
+  40.69,
+   -74 
+])
+  .addTo( map )
+  .bindPopup("<p><b>One Van Voorhees Park</b><br />Tennis Courts: 1<br/>(718) 722-3213</p>")
+L
+  .marker([
+ 40.651,
+-73.97 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Prospect Park Tennis Center</b><br />Tennis Courts: 1<br/>(718) 436-2500</p>")
+L
+  .marker([
+ 40.612,
+-74.037 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Shore Road Playground</b><br />Tennis Courts: 1<br/>(718) 259-4016</p>")
+L
+  .marker([
+ 40.716,
+-73.975 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Brian Watkins Tennis Center</b><br />Tennis Courts: 1<br/>(212) 529-7185</p>")
+L
+  .marker([
+ 40.849,
+-73.946 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Fort Washington Park</b><br />Tennis Courts: 1<br/>(212) 304-2322</p>")
+L
+  .marker([
+ 40.825,
+-73.936 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Frederick Johnson Playground</b><br />Tennis Courts: 1<br/>(212) 234-9609</p>")
+L
+  .marker([
+  40.87,
+-73.922 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Inwood Hill Park</b><br />Tennis Courts: 1<br/>(212) 304-2381</p>")
+L
+  .marker([
+ 40.739,
+-73.738 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Alley Pond Park</b><br />Tennis Courts: 1<br/>(718) 264-2600</p>")
+L
+  .marker([
+ 40.776,
+-73.924 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Astoria Park</b><br />Tennis Courts: 1<br/>(718) 626-8622</p>")
+L
+  .marker([
+ 40.681,
+-73.787 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Baisley Park</b><br />Tennis Courts: 1<br/>(718) 520-5314</p>")
+L
+  .marker([
+  40.67,
+-73.788 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Baisley South</b><br />Tennis Courts: 1<br/>(718) 520-5314</p>")
+L
+  .marker([
+   40.6,
+-73.82 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Broad Channel Park</b><br />Tennis Courts: 1<br/>(718) 318-4000</p>")
+L
+  .marker([
+ 40.661,
+-73.744 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Brookville Park</b><br />Tennis Courts: 1<br/>(718) 978-5702</p>")
+L
+  .marker([
+ 40.703,
+-73.785 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Det. Keith L. Williams Park</b><br />Tennis Courts: 1<br/>(718) 520-6912</p>")
+L
+  .marker([
+ 40.698,
+-73.856 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Forest Park</b><br />Tennis Courts: 1<br/>(718) 846-4946</p>")
+L
+  .marker([
+ 40.684,
+-73.888 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Highland Park- Lower Playground</b><br />Tennis Courts: 1<br/>(718) 235-4378</p>")
+L
+  .marker([
+  40.72,
+-73.876 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Juniper Valley Park</b><br />Tennis Courts: 1<br/>(718) 326-2877</p>")
+L
+  .marker([
+ 40.762,
+-73.735 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Louis Pasteur Park</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+ 40.599,
+-73.768 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Michaelis Bayswater Park</b><br />Tennis Courts: 1<br/>(718) 318-4020</p>")
+L
+  .marker([
+ 40.727,
+-73.904 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Maurice Park</b><br />Tennis Courts: 1<br/>(718) 326-2877</p>")
+L
+  .marker([
+ 40.667,
+-73.807 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Police Officer Edward Byrne Park</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+ 40.599,
+-73.784 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Rockaway Community Park</b><br />Tennis Courts: 1<br/>(718) 318-4000</p>")
+L
+  .marker([
+ 40.686,
+-73.77 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Roy Wilkins Park</b><br />Tennis Courts: 1<br/>(718) 276-8690</p>")
+L
+  .marker([
+  40.66,
+-73.762 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Springfield Park</b><br />Tennis Courts: 1<br/>(718) 723-6156</p>")
+L
+  .marker([
+ 40.694,
+-73.78 
+])
+  .addTo( map )
+  .bindPopup("<p><b>St. Albans Park</b><br />Tennis Courts: 1<br/>(718) 478-1364</p>")
+L
+  .marker([
+ 40.674,
+-73.774 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Victor Hanson Community Center (Rochdale Park)</b><br />Tennis Courts: 1<br/>(718) 978-1536</p>")
+L
+  .marker([
+ 40.754,
+-73.889 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Travers Park</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+ 40.765,
+-73.871 
+])
+  .addTo( map )
+  .bindPopup("<p><b>East Elmhurst (PS 127)</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+  40.64,
+-74.09 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Skyline Park</b><br />Tennis Courts: 1<br/>(718) 667-3545</p>")
+L
+  .marker([
+ 40.628,
+ -74.1 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Silver Lake Park</b><br />Tennis Courts: 1<br/>(718) 667-3545</p>")
+L
+  .marker([
+ 40.643,
+-74.109 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Walker Park</b><br />Tennis Courts: 1<br/>(718) 667-3545</p>")
+L
+  .marker([
+ 40.604,
+-74.161 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Willowbrook Park</b><br />Tennis Courts: 1<br/>(718) 667-3545</p>")
+L
+  .marker([
+ 40.519,
+-74.187 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Wolfes Pond Park</b><br />Tennis Courts: 1<br/>(718) 667-3545</p>")
+L
+  .marker([
+ 40.794,
+-73.92 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Sportime at Randall's Island</b><br />Tennis Courts: 1<br/>(212) 427-6150</p>")
+L
+  .marker([
+ 40.739,
+73.736 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Alley Pond Tennis Club</b><br />Tennis Courts: 1<br/>(718) 264-2600</p>")
+L
+  .marker([
+ 40.684,
+-73.972 
+])
+  .addTo( map )
+  .bindPopup("<p><b>South Oxford Park</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+  40.82,
+-73.92 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Governor Smith Playground</b><br />Tennis Courts: 1<br/></p>")
+L
+  .marker([
+ 40.717,
+-74.012 
+])
+  .addTo( map )
+  .bindPopup("<p><b>Washington Market Park</b><br />Tennis Courts: 1<br/></p>")
+    
+    
+    
+    
+    if (spec.circle2){
+      for (var c in spec.circle2){
+        var circle = L.circle(c.center, c.radius, c.opts)
+         .addTo(map);
+      }
+    }
+    
+    
+    
+    
+    
+   
+   
+   
+</script>
+    
+  </body>
+</html>
