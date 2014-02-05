@@ -1,2 +1,2 @@
-rmongdb-rcharts
+rmongodb-rcharts
 ===============
