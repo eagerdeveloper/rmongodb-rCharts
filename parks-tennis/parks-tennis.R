@@ -40,7 +40,7 @@ while (mongo.cursor.next(cursor)) {
   parkTennisCourts = paste0("Tennis Courts: ", park$Courts)
   parkPhone = park$Phone
   parkPopupDetails = paste0("<p>", parkName, "<br />", 
-                            parkCourts, "<br/>", parkPhone, "</p>")
+                            parkTennisCourts, "<br/>", parkPhone, "</p>")
   
   # create marker
   parksMap$marker(c(parkLat, parkLon), bindPopup = parkPopupDetails)
